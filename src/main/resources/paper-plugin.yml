@@ -1,0 +1,6 @@
+name: NoOverworldEndermen
+version: '${version}'
+
+main: org.infotoast.noOverworldEndermen.NoOverworldEndermen
+api-version: '26.3'
+load: POSTWORLD
