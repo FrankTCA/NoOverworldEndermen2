@@ -10,11 +10,8 @@ import org.bukkit.event.entity.EntitySpawnEvent;
 public class SpawnListener implements Listener {
     @EventHandler(priority = EventPriority.HIGHEST)
     public void onEntitySpawn(EntitySpawnEvent evt) {
-        System.out.println("Entity spawn");
         if (evt.getEntityType().equals(EntityType.ENDERMAN)) {
-            System.out.println("Entity is enderman");
             if (evt.getLocation().getWorld().getEnvironment().equals(World.Environment.NORMAL)) {
-                System.out.println("Is overworld.");
                 evt.setCancelled(true);
             }
         }
